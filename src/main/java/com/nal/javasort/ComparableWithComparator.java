@@ -51,20 +51,10 @@ public class ComparableWithComparator implements Comparable<ComparableWithCompar
     };
 
     //Comparator to order based on Age
-    public static Comparator<ComparableWithComparator> AgeComparator = new Comparator<>() {
-        @Override
-        public int compare(ComparableWithComparator e1, ComparableWithComparator e2) {
-            return e1.getAge() - e2.getAge();
-        }
-    };
+    public static Comparator<ComparableWithComparator> AgeComparator = (e1, e2) -> e1.getAge() - e2.getAge();
 
     //Comparator to order based on Name
-    public static Comparator<ComparableWithComparator> NameComparator = new Comparator<>() {
-        @Override
-        public int compare(ComparableWithComparator e1, ComparableWithComparator e2) {
-            return e1.getName().compareTo(e2.getName());
-        }
-    };
+    public static Comparator<ComparableWithComparator> NameComparator = Comparator.comparing(ComparableWithComparator::getName);
 
     @Override
     //print formatted CustomSortUsingComparator details

@@ -1,4 +1,4 @@
-package com.nal.collections.interfaces;
+package com.nal.collections;
 
 /**
  * Created by nishant on 19/02/20.

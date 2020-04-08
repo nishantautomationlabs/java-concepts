@@ -1,4 +1,4 @@
-package com.nal.collections.interfaces;
+package com.nal.collections;
 
 import java.util.Deque;
 import java.util.LinkedList;

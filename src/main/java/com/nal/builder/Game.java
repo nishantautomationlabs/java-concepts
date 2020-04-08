@@ -60,7 +60,7 @@ public class Game {
         }
     }
 
-    private Game(GameBuilder builder) //Private constructor, not assesible by using Game class directly
+    private Game(GameBuilder builder) //Private constructor, not accessible by using Game class directly
     {
         homeTeam = builder.homeTeam;
         awayTeam = builder.awayTeam;

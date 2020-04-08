@@ -29,7 +29,7 @@ public class Ninja {
         this.hitPoints = copy.hitPoints;
         this.weapon = new Weapon(copy.weapon);
         this.belt = new Belt();
-        this.getBelt().tools = new ArrayList<Tool>();
+        this.getBelt().tools = new ArrayList<>();
         for(Tool tool: copy.belt.tools)
         {
             this.belt.tools.add(new Tool(tool));

@@ -13,7 +13,7 @@ public class Main {
         Tool tool1 = new Tool("knife", "addon");
         Tool tool2 = new Tool("torch", "accessories");
         Belt belt = new Belt();
-        belt.tools = new ArrayList<Tool>();
+        belt.tools = new ArrayList<>();
         belt.tools.add(tool1);
         belt.tools.add(tool2);
         Ninja ninja = new Ninja("Nancy", 100, weapon, belt);
