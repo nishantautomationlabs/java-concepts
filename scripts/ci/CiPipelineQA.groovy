@@ -389,8 +389,8 @@ node {
                         println "The repo name :  ${repo}"
 
 //                        if (servicesMap.containsKey(serviceName)) {
-
-                        git "git@github.com:bankbazaar/${repo}.git"
+                        git "https://github.com/nishantautomationlabs/${repo}.git"
+//                        git "git@github.com:nishantautomationlabs/${repo}.git"
                         mvnHome = tool 'Maven'
                         env.JAVA_HOME = jdk
                         env.PATH = "${env.JAVA_HOME}/bin:${env.PATH}"
