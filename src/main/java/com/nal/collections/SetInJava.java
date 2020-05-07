@@ -15,12 +15,14 @@ public class SetInJava {
         Set<Integer> set = new HashSet<>();
         System.out.println("Add 1: " + set.add(1));
         System.out.println("Add 1: " + set.add(1));
+        System.out.println("Add 1: " + set.add(2));
         System.out.println("Contains 1: " + set.contains(1));
         System.out.println("Size:" + set.size());
         System.out.println("Remove 1:" + set.remove(1));
         System.out.println("Remove 1:" + set.remove(1));
         System.out.println("Is Empty:" + set.isEmpty());
         int value = set.iterator().next();
+        System.out.println("Value: " +value);
         set.clear();
 
         Set<Integer> integerSet = new HashSet<>();
@@ -36,5 +38,9 @@ public class SetInJava {
         Iterator<Integer> iterator = integerSet.iterator();
         while (iterator.hasNext())
             System.out.println(iterator.next());
+
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("sadsa", "Sadsa", "dsds"));
+        HashSet<String> setFromArray = new HashSet<>(arrayList);
+        setFromArray.stream().forEach(System.out:: println);
     }
 }
